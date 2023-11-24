@@ -62,5 +62,6 @@ tags
 # Custom
 /_output
 /.idea/
+.air.toml
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,vim,go
