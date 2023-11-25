@@ -11,3 +11,13 @@ miniblog
 $ ./_output/linablog
 Hello MiniBlog
 ```
+
+## Swagger
+install
+```shell
+$ go install github.com/go-swagger/go-swagger/cmd/swagger@latest
+```
+run 
+```shell
+swagger serve -F=swagger --no-open --port 65534 ./api/openapi/openapi.yaml
+```
