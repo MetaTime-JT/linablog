@@ -21,3 +21,8 @@ run
 ```shell
 swagger serve -F=swagger --no-open --port 65534 ./api/openapi/openapi.yaml
 ```
+
+## 运行addlicense工具添加版权头信息。
+```shell
+addlicense -v -f ./scripts/boilerplate.txt --skip-dirs=third_party,vendor,_output,.idea .
+```

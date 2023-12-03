@@ -6,16 +6,15 @@
 package main
 
 import (
+	"github.com/linablog/internal/linablog"
 	"os"
 
 	_ "go.uber.org/automaxprocs"
-
-	"github.com/MetaTime-JT/linablog/internal/miniblog"
 )
 
 // Go 程序的默认入口函数(主函数).
 func main() {
-	command := miniblog.NewMiniBlogCommand()
+	command := linablog.NewLinaBlogCommand()
 	if err := command.Execute(); err != nil {
 		os.Exit(1)
 	}
